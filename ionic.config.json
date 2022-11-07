@@ -1,0 +1,7 @@
+{
+  "name": "pmdm02-ejemplo2022",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

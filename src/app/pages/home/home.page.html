@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- 
+    Utilizamos *ngFor para generar componentes repetidos, los items de una lista
+    Leemos los valores de cada item de un array de objetos JSON definidos en el fichero .ts
+  -->
+  <ion-list *ngFor="let persona of gestionPersonas.getPersonas()">
+    <ion-item>
+      <ion-label>{{persona.id}} : {{persona.nombre}} {{persona.apellido}}</ion-label>
+      <ion-icon slot="end" name="trash" (click)="borrar(persona.id)"></ion-icon>
+      <ion-icon slot="end" name="create" (click)="modificar(persona)"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="presentarModal()">Insertar</ion-button>
+  <!-- <ion-button expand="block" routerLink="/borrar">Borrar</ion-button> -->
+</ion-content>

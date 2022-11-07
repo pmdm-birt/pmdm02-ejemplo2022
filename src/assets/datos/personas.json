@@ -1,0 +1,17 @@
+[
+    {
+      "id": "aa",
+      "nombre": "Aitor",
+      "apellido": "Arana"
+    },
+    {
+      "id": "sr",
+      "nombre": "Sara",
+      "apellido": "Ruiz"
+    },
+    {
+      "id": "mo",
+      "nombre": "Miren",
+      "apellido": "Ojer"
+    }
+  ]
